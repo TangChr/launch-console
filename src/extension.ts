@@ -10,9 +10,8 @@ export function activate() {
 
 function openShell()
 {
-    //let shellPath = "start \"%description%\" \"C:\\Program Files\\ConsoleZ\\Console.exe\" -d \"%path%\"";
-    let foo = workspace.getConfiguration("openShell");
-    let shellPath = foo.get("path") as string;
+    let config = workspace.getConfiguration("openShell");
+    let shellPath = config.get("shell") as string;
     let rootPath = workspace.rootPath != null ? workspace.rootPath : "C:\\";
     //let rootPath = "E:\\GitHub\\open-shell";
 

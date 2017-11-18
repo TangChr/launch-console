@@ -25,7 +25,7 @@
             "type": "object",
             "title": "TypeScript configuration",
             "properties": {
-                "openShell.path": {
+                "openShell.shell": {
                     "type": "string",
                     "default": "start cmd.exe /s /k pushd \"%path%\"",
                     "description": "Path to shell."
