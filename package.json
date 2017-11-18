@@ -27,7 +27,7 @@
             "properties": {
                 "openShell.path": {
                     "type": "string",
-                    "default": "start \"%description%\" /WAIT %comspec%",
+                    "default": "start cmd.exe /s /k pushd \"%path%\"",
                     "description": "Path to shell."
                 }
             }
