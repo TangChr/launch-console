@@ -1,9 +1,9 @@
 {
     "name": "open-shell",
-    "displayName": "open-shell",
+    "displayName": "Open shell",
     "description": "Open a shell",
     "version": "0.0.1",
-    "publisher": "knolikn",
+    "publisher": "tangchr",
     "engines": {
         "vscode": "^1.18.0"
     },
@@ -11,17 +11,29 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.openShell"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.openShell",
+                "title": "Open shell"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "TypeScript configuration",
+            "properties": {
+                "openShell.path": {
+                    "type": "string",
+                    "default": "start \"%description%\" /WAIT %comspec%",
+                    "description": "Path to shell."
+                }
+            }
+        }
     },
+    
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
