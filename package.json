@@ -24,7 +24,7 @@
         ],
         "configuration": {
             "type": "object",
-            "title": "TypeScript configuration",
+            "title": "Open shell configuration",
             "properties": {
                 "openShell.shell": {
                     "type": "string",
