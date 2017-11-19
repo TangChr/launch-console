@@ -11,7 +11,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.openShell"
+        "onCommand:extension.openShell",
+        "workspaceContains:**/.*"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -29,6 +30,16 @@
                     "type": "string",
                     "default": "start cmd.exe /s /k pushd \"%path%\"",
                     "description": "Path to shell."
+                },
+                "openShell.defaultDir": {
+                    "type": "string",
+                    "default": "C:\\",
+                    "description": "Default directory to open."
+                },
+                "openShell.text": {
+                    "type": "string",
+                    "default": "Open shell",
+                    "description": "Text on statusbar"
                 }
             }
         }
