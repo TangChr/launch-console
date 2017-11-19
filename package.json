@@ -1,11 +1,17 @@
 {
     "name": "open-shell",
     "displayName": "Open shell",
-    "description": "Open a shell",
+    "description": "Open a shell from VS Code",
     "version": "0.0.1",
     "publisher": "tangchr",
     "license": "MIT",
     "homepage": "http://seaweed.dk",
+    "keywords": [
+        "vscode",
+        "code",
+        "shell",
+        "console"
+    ],
     "engines": {
         "vscode": "^1.18.0"
     },
