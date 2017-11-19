@@ -4,6 +4,8 @@
     "description": "Open a shell",
     "version": "0.0.1",
     "publisher": "tangchr",
+    "license": "MIT",
+    "homepage": "http://seaweed.dk",
     "engines": {
         "vscode": "^1.18.0"
     },
@@ -44,7 +46,6 @@
             }
         }
     },
-    
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
@@ -53,9 +54,9 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
+        "@types/mocha": "^2.2.44",
+        "@types/node": "^8.0.53",
         "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "vscode": "^1.1.7"
     }
 }
