@@ -3,6 +3,7 @@
     "displayName": "Open shell",
     "description": "Open a shell from VS Code",
     "version": "0.0.1",
+    "author": "Christian Tang <christian@tcdev.dk> (http://seaweed.dk)",
     "publisher": "tangchr",
     "license": "MIT",
     "homepage": "http://seaweed.dk",
