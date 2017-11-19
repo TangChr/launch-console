@@ -6,21 +6,21 @@ export function activate() {
      
     if (!statusItem)
     {
-        let config = workspace.getConfiguration("openShell");
-        let statusBarText = config.get("text") as string;
+        let config = workspace.getConfiguration("launchConsole");
+        let statusBarText = config.get("statusbarText") as string;
 
         statusItem = window.createStatusBarItem(StatusBarAlignment.Left);
         statusItem.text = statusBarText;
-        statusItem.command = 'extension.openShell';
+        statusItem.command = 'extension.launchConsole';
         statusItem.show();
     }
 
-	commands.registerCommand('extension.openShell', () => openShell());
+	commands.registerCommand('extension.launchConsole', () => launchConsole());
 }
 
-function openShell()
+function launchConsole()
 {
-    let config = workspace.getConfiguration("openShell");
+    let config = workspace.getConfiguration("launchConsole");
     let shellPath = config.get("shell") as string;
     let defaultDir = config.get("defaultDir") as string;
     let rootPath = workspace.rootPath != null ? workspace.rootPath : defaultDir;

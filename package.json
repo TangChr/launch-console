@@ -1,7 +1,7 @@
 {
-    "name": "open-shell",
-    "displayName": "Open shell",
-    "description": "Open a shell from VS Code",
+    "name": "launch-console",
+    "displayName": "Launch console",
+    "description": "Open a console window from VS Code",
     "version": "0.0.1",
     "author": "Christian Tang <christian@tcdev.dk> (http://seaweed.dk)",
     "publisher": "tangchr",
@@ -20,34 +20,34 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.openShell",
+        "onCommand:extension.launchConsole",
         "workspaceContains:**/.*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.openShell",
-                "title": "Open shell"
+                "command": "extension.launchConsole",
+                "title": "Open console"
             }
         ],
         "configuration": {
             "type": "object",
-            "title": "Open shell configuration",
+            "title": "Launch console configuration",
             "properties": {
-                "openShell.shell": {
+                "launchConsole.shell": {
                     "type": "string",
                     "default": "start cmd.exe /s /k pushd \"%path%\"",
                     "description": "Path to shell."
                 },
-                "openShell.defaultDir": {
+                "launchConsole.defaultDir": {
                     "type": "string",
                     "default": "C:\\",
                     "description": "Default directory to open."
                 },
-                "openShell.text": {
+                "launchConsole.statusbarText": {
                     "type": "string",
-                    "default": "Open shell",
+                    "default": "Open console",
                     "description": "Text on statusbar"
                 }
             }
