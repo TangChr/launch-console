@@ -2,7 +2,7 @@
     "name": "launch-console",
     "displayName": "Launch console",
     "description": "Open a console window from VS Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Christian Tang <christian@tcdev.dk> (http://seaweed.dk)",
     "publisher": "tangchr",
     "license": "MIT",
@@ -60,8 +60,8 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "@types/node": "^8.0.53",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.7"
+        "@types/node": "^9.3.0",
+        "typescript": "2.6.2",
+        "vscode": "^1.1.10"
     }
 }
