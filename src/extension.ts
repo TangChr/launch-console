@@ -1,5 +1,6 @@
 import {window, commands, workspace, StatusBarItem, StatusBarAlignment} from 'vscode'; // Import VS Code
 import * as child_process from 'child_process';
+
 var statusItem: StatusBarItem;
 
 export function activate() {
@@ -7,7 +8,7 @@ export function activate() {
     if (!statusItem)
     {
         let config = workspace.getConfiguration("launchConsole");
-        let statusBarText = config.get("statusbarText") as string;
+        let statusBarText = config.get("text") as string;
 
         statusItem = window.createStatusBarItem(StatusBarAlignment.Left);
         statusItem.text = statusBarText;
@@ -23,7 +24,10 @@ function launchConsole()
     let config = workspace.getConfiguration("launchConsole");
     let shellPath = config.get("shell") as string;
     let defaultDir = config.get("defaultDir") as string;
-    let rootPath = workspace.rootPath != null ? workspace.rootPath : defaultDir;
+
+
+
+    let rootPath = workspace.rootPath;
 
     let command = formatCommand(shellPath, rootPath);
     child_process.exec(command);

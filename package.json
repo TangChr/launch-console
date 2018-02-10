@@ -28,7 +28,7 @@
         "commands": [
             {
                 "command": "extension.launchConsole",
-                "title": "Open console"
+                "title": "Launch console"
             }
         ],
         "configuration": {
@@ -40,12 +40,7 @@
                     "default": "start cmd.exe /s /k pushd \"%path%\"",
                     "description": "Path to shell."
                 },
-                "launchConsole.defaultDir": {
-                    "type": "string",
-                    "default": "C:\\",
-                    "description": "Default directory to open."
-                },
-                "launchConsole.statusbarText": {
+                "launchConsole.text": {
                     "type": "string",
                     "default": "Open console",
                     "description": "Text on statusbar"
@@ -60,8 +55,8 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "@types/node": "^9.3.0",
-        "typescript": "2.6.2",
+        "@types/node": "9.4.2",
+        "typescript": "2.7.1",
         "vscode": "^1.1.10"
     }
 }
