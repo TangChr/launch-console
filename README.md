@@ -11,7 +11,6 @@
 Place this in your User Settings in VS Code
 
 ```json
-"launchConsole.shell": "start \"\" \"C:\\Program Files\\ConsoleZ\\Console.exe\" -d \"%path%\"",
-"launchConsole.statusbarText": "Open ConsoleZ",
-"launchConsole.defaultDir": "C:\\workspace"
+"launchConsole.shell": "start \"\" \"C:\\Tools\\Cmder\\Cmder.exe\" \"%path%\"",
+"launchConsole.text": "Open Cmder"
 ```
