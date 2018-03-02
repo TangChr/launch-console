@@ -14,7 +14,7 @@
         "console"
     ],
     "engines": {
-        "vscode": "^1.18.0"
+        "vscode": "^1.21.0"
     },
     "categories": [
         "Other"
@@ -55,8 +55,8 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "@types/node": "9.4.2",
-        "typescript": "2.7.1",
+        "@types/node": "^9.4.6",
+        "typescript": "^2.7.2",
         "vscode": "^1.1.10"
     }
 }
