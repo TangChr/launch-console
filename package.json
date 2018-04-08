@@ -37,7 +37,7 @@
             "properties": {
                 "launchConsole.shell": {
                     "type": "string",
-                    "default": "start cmd.exe /s /k pushd \"%path%\"",
+                    "default": "start powershell -noexit -command Set-Location -literalPath \"%path%\"",
                     "description": "Path to shell."
                 },
                 "launchConsole.text": {
